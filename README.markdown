@@ -63,3 +63,13 @@ bptree_obj-zol-0.6.2   | Created with ZoL v0.6.2
                        | each of which contained a single small file.  The
                        | deferred destroy object and its object's data were
                        | created by destroying both of these filesystems.
+		       |
+zol-0.7.0-rc1-be-ziltest| This pool was created so that we might have a big
+		       | endian pool for debugging. The pool was created using
+		       | ziltest.sh, since at the time of uploading there are
+		       | is an issue where the ZIL will fail to be claimed when
+		       | being imported on a different endian machine. See
+		       | https://github.com/zfsonlinux/zfs/issues/5256 for
+		       | details on this problem. The pool's name is 
+		       | ziltest.26210 and it contains the "ziltest.26210/fs"
+		       | filesystem made by ziltest.sh.
