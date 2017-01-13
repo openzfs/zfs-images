@@ -73,3 +73,12 @@ zol-0.7.0-rc1-be-ziltest| This pool was created so that we might have a big
 		       | details on this problem. The pool's name is 
 		       | ziltest.26210 and it contains the "ziltest.26210/fs"
 		       | filesystem made by ziltest.sh.
+		       |
+zol-znode-removed-xattr| This pool was created to be a minimal reproducer of
+                       | https://github.com/zfsonlinux/zfs/issues/4083.
+                       | The pool contains a single filesystem "tank" with only
+                       | a file "file2" in it. When we try to delete the file we
+                       | trigger an assertion in zfs_remove(): this is because
+                       | the file xattr obj was already deleted. This data
+                       | discrepancy is not detected by a scrub which completes
+                       | successfully.
