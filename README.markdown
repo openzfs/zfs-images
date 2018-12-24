@@ -15,11 +15,7 @@ options.  Finally, each new image must be briefly described in this file.
 Name                   | Description
 ---------------------- | ------------------------------------------------
 zol-0.6.1              | Created with ZoL v0.6.1<br><br> The pool was created with all default settings and<br> populated with a few hundred files and directories.<br> It includes a snapshot and clone of the filesystem<br> which has been modified from the original.  The pool<br> has been scrubbed once and was cleanly exported.
-                       |
-zol-0.6.2              | Created with ZoL v0.6.2
-                       |
-                       | This pool was created in same way as the zol-0.6.1
-                       | pool described above.
+zol-0.6.2              | Created with ZoL v0.6.2<br><br> This pool was created in same way as the zol-0.6.1 pool described above.
                        |
 zol-0.6.2-173          | Created with ZoL zfs-0.6.2-173-g881f45c
                        |
